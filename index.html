@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos de Armazenamento do Navegador</title>
+    <script src="./index.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <hl>Exercitando diferentes recursos de armazenamento no Navegador</hl>
+    <hr>
+<div class="area" id="ss">
+    <img src="./img/frutas.png" class="bg"/>
+    <h2>SESSION STORAGE <small class="text-muted">(HTML5)</small></h2>
+    <ul>
+        <li>Informação fica armazenada, mesmo após atualizar (refresh) a página; </li>
+        <li>Informação expira ao fechar a aba ou navegador.</li>
+        <li>Local de Armazenamento: Navegador (Até 5MB)</li>       
+    </ul>
+    <em>Exemplo: </em><button class="btn btn-outline-dark btn-sm my-3" id="readSessionBtn">Clique para ver qual informação armazenada atualmente aqui</button>
+    <div class="input-group">
+    <input type="text" class="form-controll" id="session" placeholder="Digite o nome de uma FRUTA">
+    <button class="btn btn-info" id="setSessionBtn">Armazenar</button>
+    <button class="btn btn-info" id="clrSessionBtn">Limpar</button>
+    </div>      
+</div>
+
+<div class="area" id="ls">  
+    <img src="./img/animais.png" class="bg"/>
+    <h2>LOCAL STORAGE <small class="text-muted">(HTML5)</small></h2>
+    <ul>
+        <li>Informação fica armazenada inclusive após atualizar (refresh) a página.</li>
+        <li>Informação só expira se for apagada.</li>
+        <li>Local de Armazenamento: Navegador (Até 10MB)</li>
+    </ul>
+    <em>Exemplo: </em><button class="btn btn-outline-dark btn-sm my-3" id="readLocalBtn">Clique para ver qual informação armazenada atualmente aqui.</button>
+    <div class="input-group">
+    <input type="text" class="form-controll" id="local" placeholder="Digite o nome de um ANIMAL">
+    <button class="btn btn-warning" id="setLocalBtn">Armazenar</button>
+    <button class="btn btn-warning" id="clrLocalBtn">Limpar</button>      
+    </div>
+</div>
+<div class="area" id="co">     
+    <img src="./img/chocolate.png" class="bg"/>
+    <h2>COOKIES <small class="text-muted">(HTML4 / HTML5)</small></h2>
+    <ul>
+        <li>Informação fica armazenada inclusive após atualizar (refresh) a página.</li>
+        <li>Informação pode expirar após um prazo pré-determinado.</li>
+        <li>Local de Armazenamento: Navegador e Servidor (Até 4kb)</li>
+    </ul>
+    <em>Exemplo: </em><button class="btn btn-outline-dark btn-sm my-3" id="readCookieBtn">Clique para ver qual informação armazenada atualmente aqui.</button>
+    <div class="input-group">
+    <input type="text" id="cookie" placeholder="Digite o nome de um CHOCOLATE">
+    <button class="btn btn-danger" id="setCookieBtn">Armazenar</button>
+    <button class="btn btn-danger" id="clrCookieBtn">Limpar</button>
+    </div>
+</div>
+<p class="lead">Referência: <a href="https://www.xenonstack.com/insights/local-vs-session-storage-vs-cookie">Xenonstack.com</a></p>
+<h5></h5>
+</body>
+
+</html>

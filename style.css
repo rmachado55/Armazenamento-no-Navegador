@@ -1,0 +1,32 @@
+.area{
+    margin:20px;
+    padding:20px;
+    width:520px;
+    border-radius: 20px;
+}
+
+#ss{
+    background-color: rgb(224, 245, 247);
+    box-shadow: inset 3px 3px rgb(0, 183, 255);   
+}
+
+#ls{
+    background-color: rgb(247, 244, 224);
+    box-shadow: inset 3px 3px rgb(255, 217, 0); 
+}
+
+#co{
+    background-color: rgb(247, 224, 224);
+    box-shadow: inset 3px 3px rgb(255, 0, 0); 
+}
+
+.area li{
+    font-size: 13px;
+}
+
+.bg{
+    width:200px;
+    margin-left: 290px;
+    position: absolute;
+    filter:opacity(10%);
+}
